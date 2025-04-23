@@ -36,6 +36,8 @@ class User(AbstractBaseUser):
         unique=False,
     )
 
+    USERNAME_FIELD = 'email'
+
 
 class Item(models.Model):
     name = models.CharField(
